@@ -134,9 +134,6 @@ secure
 dll
 
 
-Semua tipe data dalam bahasa Java mempunyai ukuran yang konsisten di semua jenis platform. Source code program Java sendiri tidak perlu dirubah sama sekali jika Anda ingin mengkompile ulang di platform lain. Hasil dari mengkompile source code Java bukanlah kode mesin atau instruksi prosesor yang spesifik terhadap mesin tertentu, melainkan berupa bytecode yang berupa file berekstensi .class. Bytecode tersebut dapat langsung Anda eksekusi di tiap platform yang dengan menggunakan Java Virtual Machine (JVM) sebagai interpreter terhadap bytecode tersebut.
-JVM sendiri adalah sebuah aplikasi yang berjalan di atas sebuah sistem operasi dan menerjemahkan bytecode program Java dan mengeksekusinya, sehingga secara konsep bisa dianggap sebagai sebuah interpreter.
-
 Cara compile java di terminal dan command promt;
 
 1. Buat koding java di text editor
