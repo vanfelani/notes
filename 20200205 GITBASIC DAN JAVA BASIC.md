@@ -81,7 +81,7 @@ Untuk meyimpang ke repository dengan perintah!
 
 'git commit -m "isi aja terserah"/'
 
-8. git log
+6. git log
 Untuk menampilkan daftar commit yang sudah dibuat perintahnya!
 
 'git log'
@@ -139,11 +139,13 @@ Cara compile java di terminal dan command promt;
 1. Buat koding java di text editor
 
 
+
  	public class test{
  		public static void main(String [] adit){
  		System.out.println(“Kita sedang belajar java”);
  		}
  	}
+
 
 
 2. Buka terminal jika anda pengguna linux dan buka commandpromt jika anda pengguna windows. Kemudian compile file kalian dengan sintaks javac namafile jika ada kesalahan dari koding nya maka file tidak akan running error. Jika koding berhasil maka ketikan java namafile maka koding akan running dan menampilkan hasilnya.
