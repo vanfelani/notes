@@ -7,18 +7,14 @@ Expression adalah hal – hal mendasar dalam proses perhitungan di dalam bahasa 
 
 Contoh :
 
-int a = 7 \* 2 + 1;
+int a = 7 * 2 + 1;
 
 2. Block
 
 Block digunakan untuk mengelompokkan 0 atau lebih statement. Block dibuka dan ditutup oleh { }.
-
 Contoh :
-
 {
-
-   _System.out.println(&quot;Lebih Kecil&quot;);_
-
+   System.out.println(“Lebih Kecil”);
 }
 
 3.  Statements
@@ -44,6 +40,7 @@ System.out.println("Lebih Kecil dari 18");
 
 System.out.println("Lebih Besar dari 18");
 
+}
 }
 
 _Output : Lebih Besar dari 18_
@@ -126,15 +123,15 @@ public class test {
 
 Output : August
 
-Perintah **break** jika digunakan di dalam perulangan berfungsi untuk menghentikan paksa proses perulangan yang berlangsung.berbeda dengan Continue dia tidak akan menghentikan program saat dieksekusi misalnya menggunakan for loops tapi hanya akan melewatinya saja
+Perintah break jika digunakan di dalam perulangan berfungsi untuk menghentikan paksa proses perulangan yang berlangsung.berbeda dengan Continue dia tidak akan menghentikan program saat dieksekusi misalnya menggunakan for loops tapi hanya akan melewatinya saja
 
 
 
-# While &amp; do while
+# While & do while
 
 **A. while loop**
 
-**while loop** digunakan untuk mengeksekusi kode program berulang-ulang sampai kondisi tertentu, cara penulisan syntax pada while, seperti ini:
+while loop digunakan untuk mengeksekusi kode program berulang-ulang sampai kondisi tertentu, cara penulisan syntax pada while, seperti ini:
 
 while(boolean\_expression){
 
@@ -159,7 +156,8 @@ public class test {
 
 **B. do-while**
 
-do-while hampir sama dengan while, yang membedakannya adalah, while loop akan meihat kondisi boolean_expression terlehih dahulu, jika bernilai "true", maka pernyataan didalamnya akan dijalankan, berbeda dengan do-while, pada do-while, pernyataan akan di eksekusi terlebih dahulu sebelum mengevaluasi boolean_expression.
+do while hampir sama dengan while, yang membedakannya adalah, while loop akan meihat kondisi boolean_expression terlehih dahulu, jika bernilai "true", maka pernyataan didalamnya akan dijalankan, berbeda dengan do while, pada do while, pernyataan akan di eksekusi terlebih dahulu sebelum mengevaluasi Boolean expression.
+
 do{
    //statement;
 }while(boolean_expression);
@@ -168,16 +166,17 @@ Coba kalian perhatikan kode program berikut ini, program akan mengeksekusi perny
 public class latihan_looping {
 
     public static void main(String[] args) {
-        String a = "hello";
+        String a = "Indonesia";
         int x = 0;
         do{
             System.out.println(a);
             x++;
-        }while(x > 9);} }
+        }while(x > 9);
+    } }
 
 **For**
 
-Penggunaan for hampir sama dengan kedua struktur perulangan sebelumnya yaitu while dan do-while, cara penulisan syntaxnya pun berbeda dengan kedua statement tersebut. tetapi memiliki fungsi yang sama yaitu untuk melakukan looping/perulangan sebanyak jumlah yang telah ditentukan.
+Penggunaan for hampir sama dengan kedua struktur perulangan sebelumnya yaitu while dan do while, cara penulisan syntaxnya pun berbeda dengan kedua statement tersebut. tetapi memiliki fungsi yang sama yaitu untuk melakukan looping/perulangan sebanyak jumlah yang telah ditentukan.
 
 for(inisialisasi_variable; kondisi; stepExpression){
   //statement
