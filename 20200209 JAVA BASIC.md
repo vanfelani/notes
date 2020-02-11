@@ -1,4 +1,4 @@
-##Lambda Expressions
+## Lambda Expressions
 
 **Lambda** dapat digunakan ketika *anonymous class* hanya memiliki sebuah *method*.
 
@@ -14,7 +14,7 @@ printPersons(
 Hanya fungsional *Interface* yang bisa dijadikan **Lambda**, ada bawaan dari java untuk fungsional interface yaitu *predicate*.
 
 
-##Method References
+## Method References
 
 **Lambda Expressions** digunakan ketika ada *anonymous method*. Terkadang, **Lambda Expressions** tidak melakukan apa - apa selain memanggil method yang sudah ada. Karena **Lambda Expressions** hanya memanggil method yang sudah ada, method *reference* bisa digunakan sebagai gantinya. Sebagai contoh : 
 
@@ -35,7 +35,7 @@ Arrays.sort(rosterAsArray, Person::compareByAge);
 | Reference to an instance method of an arbitrary object of a particular type   | 	ContainingType::methodName              |
 | Reference to a constructor  	                                                |   ClassName::new                          |
 
-##When to Use Nested Classes, Local Classes, Anonymous Classes, and Lambda Expressions
+## When to Use Nested Classes, Local Classes, Anonymous Classes, and Lambda Expressions
 
 **Lambda Expressions** digunakan untuk situasi yang lebih spesifik :
 1. **Local class**: digunakan ketika memerlukan class yang di pakai berkali-kali. Namun, pada implementasinya tidak direkomendasikan.
@@ -43,7 +43,7 @@ Arrays.sort(rosterAsArray, Person::compareByAge);
 3. **Lamda expressions**: digunakan ketika membutuhkan *instance* sederhana dari *fungtional interface*
 4. **Nested class**: digunakan ketika akan membuat class menjadi lebih luas.
 
-##Enum Types
+## Enum Types
 **Enum types** adalah sebuah data tipe yang membolehkan variabel di set secara konstan. Variabel harus sama dengan satu nilai set yang sudah ditentukan sebelumnya.
 
 contoh penggunaan **enum**:
@@ -69,7 +69,7 @@ public static void String main(String[] args) {
 }
 ~~~
 
-##Annotations
+## Annotations
 **Annotations** digunakan sebagai informasi tambahan yang bisa ditambahkan di class, variabel atau method. Beberapa kegunaan untuk annotations:
 1. **Information for the compiler**: Annotations dapat digunakan oleh compiler untuk mendeteksi kesalahan atau menekan peringatan.
 2. **Compile-time and deployment-time processing**: *Software Tools* yang dapat memproses informasi Annotations untuk menghasilkan *code, XML files* dan sebagainya.
@@ -82,7 +82,7 @@ Beberapa format pada annotation: @Entity, @Overide, @SuppressWarnings.
 **Where Annotations Can Be Used**
 Annotations bisa diterapkan ke deklarasi: deklarasi *class*, *fields*, *methods*, dan program lainnya. Ketika digunakan pada suatu deklarasi, setiap annotations sering muncul berdasarkan konvensi pada barisnya sendiri.
 
-##Predefined Annotation Types
+## Predefined Annotation Types
 <h4>Annotation Types Used by the Java Language</h4>
 1. **@Deprecated**: annotations menunjukkan bahwa  elemen yang ditandai sudah usang dan seharusnya tidak lagi digunakan. Kompiler menghasilkan peringatan setiap kali suatu program menggunakan metode, kelas, atau bidang dengan anotasi @Deprecated
 2. **@Override**: annotations memberi tahu  kompiler bahwa elemen dimaksudkan untuk menimpa elemen yang dideklarasikan dalam superclass.
@@ -93,7 +93,7 @@ Annotations bisa diterapkan ke deklarasi: deklarasi *class*, *fields*, *methods*
 2. **@Documented**: annotations menunjukkan bahwa setiap kali anotasi yang ditentukan digunakan, elemen-elemen tersebut harus didokumentasikan menggunakan Javadoc.
 3. **@Target**: annotations menandai anotasi lain untuk membatasi elemen Java apa saja yang dapat diterapkan anntations.
 
-##Interface
+## Interface
 
 **Interface** digunakan ketika situasi diantara kelompok programmer yang memerlukan standart(kontrak) untuk menentukan bagaimana *software* saling berinteraksi. Pada **Java Programming**, interface adalah *reference type*, sama dengan class yang hanya berisi konstanta, *static method* dan *nested types*.
 
