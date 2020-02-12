@@ -1,5 +1,5 @@
 <h2>Generic</h2><hr width="100%">
-    cara Java dalam melakukan generalisasi terhadap tipe data tanpa mengurangi kemampuan Java dalam menjaga keamanan penggunaan tipe data.
+    Cara Java dalam melakukan generalisasi terhadap tipe data tanpa mengurangi kemampuan Java dalam menjaga keamanan penggunaan tipe data.
     Definisi :<br>
      Tipe data berparameter yang bersifat generic atau di kenali pada saat runtime. <br>
      Menambah stabilisasi pada kode<br>
@@ -52,13 +52,11 @@ static void printCollection(
 )
 ```
 
-<h3> Raw Types :
+<h3> Raw Types :</h3>
 Class bertipe generic masih bisa di-instantiasi (penciptaan objek) tanpa menggunakan argumen
-<h3> Generic Method    :
+<h3> Generic Method    :</h3>
 Pada method generic, simbol hanya berlaku pada method itu saja dan tidak berlaku pada method lain dalam class
-<h3> Interoperating with Legacy Code 
-Using Legacy Code In Generic Code 
-<h3>Erasure  :
+<h3>Erasure  :</h3>
 Compiler bertanggungjawab untuk “memahami” generics pada saat kompilasi.
  Namun compiler juga bertanggungjawab untuk menghapus “pemahaman” mengenai class generic, hal ini disebut type erasure.
  Informasi tipe data pada generic dihapus dari bytecode setelah kompilasi.
@@ -66,19 +64,18 @@ Compiler bertanggungjawab untuk “memahami” generics pada saat kompilasi.
  Setelah kompilasi, semua saling berbagi class yang sama
 
 
-
 <h2>Package<b></h2><hr width="100%">
 pengelompokkan dan pengorganisasian kelas-kelas dan interface yang sekelompok menjadi suatu unit tunggal dalam library. Membuat dan menggunakan Package. Package juga mempengaruhi mekanisme hak akses ke kelas-kelas di dalamnya <br>
-<h3>Fungsi Package<b><h2>
+<h3>Fungsi Package</h3>
 mengelompokkan file kelas yang terkait (karena jenisnya, fungsinya atau karena alasan lainnya) pada direktori yang sama, dimana di dalam setiap kelasnya terdapar directive (statement java dalam code yang digunakan untuk membuat
 kelas) package yang mengacu pada direktori tersebut.<br> 
 
 <h3>Membuat dan Menggunakan Package</h3>
-1. Mendeklarasikan dan memberi nama package.
-    • Package di tulis dengan <b>lowerCase</b> di awali dengan huruf kecil
-    • Menggambarkan kelas-kelas yang dibungkusnya 
-    • Harus unik (berbeda dengan nama package standard) package standard)
-    • Merepresentasikan path dari package tersebut.
+1. Mendeklarasikan dan memberi nama package.<br>
+    • Package di tulis dengan <b>lowerCase</b> di awali dengan huruf kecil <br>
+    • Menggambarkan kelas-kelas yang dibungkusnya <br>
+    • Harus unik (berbeda dengan nama package standard) package standard) <br>
+    • Merepresentasikan path dari package tersebut.<br>
 
 Package examplepackage;
 
@@ -87,27 +84,27 @@ Package examplepackage;
 
 Contoh package standard :
 
-java.lang (berisi kelas-kelas fundamental yang sering digunakan).
-java.awt dan javax.swing (berisi kelas-kelas untuk membangun aplikasi GUI)
-java.io (berisi kelas-kelas untuk proses input output)
+java.lang (berisi kelas-kelas fundamental yang sering digunakan).<br>
+java.awt dan javax.swing (berisi kelas-kelas untuk membangun aplikasi GUI)<br>
+java.io (berisi kelas-kelas untuk proses input output)<br>
 
 <h3>Struktur Direktori</h3>
-Package dapat bersarang di package lain, sehingga dapat dibuat hirarki package.
-• Bentuk umum pernyataan package multilevel :
-package namaPackage1[.namaPackage2[.namaPackage3]];
+Package dapat bersarang di package lain, sehingga dapat dibuat hirarki package.<br>
+• Bentuk umum pernyataan package multilevel :<br>
+package namaPackage1[.namaPackage2[.namaPackage3]]; <br>
 
 <h3>Menggunakan Package</h3>
-Kelas yang menggunakan berada dalam direktori(package) yang sama dengan kelas-kelas yang digunakan. Maka tidak diperlukan import.
-Kelas yang menggunakan berada dalam direktori(package) yang berbeda  dengan kelas-kelas yang digunakan. Maka pada awal source code di kelas pengguna harus mencantumkan : kelas pengguna harus mencantumkan :
+- Kelas yang menggunakan berada dalam direktori(package) yang sama dengan kelas-kelas yang digunakan. Maka tidak diperlukan import.<br>
+- Kelas yang menggunakan berada dalam direktori(package) yang berbeda  dengan kelas-kelas yang digunakan. Maka pada awal source code di kelas pengguna harus mencantumkan : kelas pengguna harus mencantumkan :<br>
 import namaPackage.NamaKelas; atau
 import namaPackage. import namaPackage. ;
 
 <h2>Exception</h2><hr width="100%">
 Peristiwa yang terjadi ketika program menemui kesalahan pada saat instruksi program dijalankan.
 Ada yang terjadi (Throw) dan Menangkap (Catch)
-2 macam :
-A try Statement : Untuk menangkap exception . Try harus menyediakan handler untuk exceptionnya 
-Method yang menyebutkan bisa /mungkin dapat melemparkan exception 
+2 macam :<br>
+A try Statement : Untuk menangkap exception . Try harus menyediakan handler untuk exceptionnya <br>
+Method yang menyebutkan bisa /mungkin dapat melemparkan exception <br>
 
 <h3>Klasifikasi class-class Exception:</h3>
 <b>1.System error</b>, Error class ini akan menjelaskan mengenai sistem error internal, meskipun hal ini jarang terjadi. Namun jika error ini terjadi maka tidak banyak yang bisa dilakukan selain memberitahu user dan menghentikan program dengan baik.
