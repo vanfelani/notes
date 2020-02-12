@@ -1,20 +1,20 @@
 <h2>Generic</h2><hr width="100%">
     cara Java dalam melakukan generalisasi terhadap tipe data tanpa mengurangi kemampuan Java dalam menjaga keamanan penggunaan tipe data.
-    Definisi :
-     Tipe data berparameter yang bersifat generic atau di kenali pada saat runtime. 
-     Menambah stabilisasi pada kode
-     Memperjelas sebuah tipe data  
-     Membuat bugs di kenali di awal & dapat terdeteksi saat di compile 
-     Array List , iterator , dan Linked List adalah contoh dari kelas generic 
-     Nama type parameter biasanya satu huruf dan huruf besar. 
-     Beberapa type parameter yang umum digunakan pada generic : 
-        E - Element
-        K – Key 
-        N – Number
-        T - Type 
-        V – Value
-     Hanya bisa menerima tipe data non primitif 
-     Generic hanya dapat menggunakan Object.Sehingga tipe data primitif harus diubah ke bentuk classnya .Contoh: int menjadi Integer
+    Definisi :<br>
+     Tipe data berparameter yang bersifat generic atau di kenali pada saat runtime. <br>
+     Menambah stabilisasi pada kode<br>
+     Memperjelas sebuah tipe data  <br>
+     Membuat bugs di kenali di awal & dapat terdeteksi saat di compile <br>
+     Array List , iterator , dan Linked List adalah contoh dari kelas generic <br>
+     Nama type parameter biasanya satu huruf dan huruf besar. <br>
+     Beberapa type parameter yang umum digunakan pada generic : <br>
+        E - Element<br>
+        K – Key <br>
+        N – Number <br>
+        T - Type <br>
+        V – Value <br>
+     Hanya bisa menerima tipe data non primitif <br>
+     Generic hanya dapat menggunakan Object.Sehingga tipe data primitif harus diubah ke bentuk classnya .Contoh: int menjadi Integer <br>
 
 Contoh :
 ```java
