@@ -1,20 +1,20 @@
 <h2>Generic</h2><hr width="100%">
     Cara Java dalam melakukan generalisasi terhadap tipe data tanpa mengurangi kemampuan Java dalam menjaga keamanan penggunaan tipe data.<br>
     Definisi :<br>
-     Tipe data berparameter yang bersifat generic atau di kenali pada saat runtime. <br>
-     Menambah stabilisasi pada kode<br>
-     Memperjelas sebuah tipe data  <br>
-     Membuat bugs di kenali di awal & dapat terdeteksi saat di compile <br>
-     Array List , iterator , dan Linked List adalah contoh dari kelas generic <br>
-     Nama type parameter biasanya satu huruf dan huruf besar. <br>
-     Beberapa type parameter yang umum digunakan pada generic : <br>
+    • Tipe data berparameter yang bersifat generic atau di kenali pada saat runtime. <br>
+    • Menambah stabilisasi pada kode<br>
+    • Memperjelas sebuah tipe data  <br>
+    • Membuat bugs di kenali di awal & dapat terdeteksi saat di compile <br>
+    • Array List , iterator , dan Linked List adalah contoh dari kelas generic <br>
+    • Nama type parameter biasanya satu huruf dan huruf besar. <br>
+    • Beberapa type parameter yang umum digunakan pada generic : <br>
         E - Element<br>
         K – Key <br>
         N – Number <br>
         T - Type <br>
         V – Value <br>
-     Hanya bisa menerima tipe data non primitif <br>
-     Generic hanya dapat menggunakan Object.Sehingga tipe data primitif harus diubah ke bentuk classnya .Contoh: int menjadi Integer <br>
+    • Hanya bisa menerima tipe data non primitif <br>
+    • Generic hanya dapat menggunakan Object.Sehingga tipe data primitif harus diubah ke bentuk classnya .Contoh: int menjadi Integer <br>
 
 Contoh :
 ```java
@@ -31,10 +31,10 @@ this.data = data;
 Generic ditandai dengan tanda kurung siku ' < > '. Pada kode di atas berarti kita membuat generic dengan simbol T, sehingga T dianggap sebagai tipe data dalam lingkup class tersebut. Sewaktu class Koleksi dipakai, T diganti menjadi tipe data tertentu.
 
 <h3>WildCards         :</h3> 
-    -> Gunakan wildcard <?> sebagai argumen
-    -> Collection <?> bermakna collection yang tidak diketahui tipe datanya
-<h3>Bounded Wildcards :</h3>
-    -> mengkhususkan tipe data yang tidak diketahui menjadi subtipe dari tipe data tertentu 
+    -> Gunakan wildcard <?> sebagai argumen<br>
+    -> Collection <?> bermakna collection yang tidak diketahui tipe datanya<br>
+<h3>Bounded Wildcards :</h3><br>
+    -> mengkhususkan tipe data yang tidak diketahui menjadi subtipe dari tipe data tertentu <br>
 Contoh :
 
 ```java
@@ -124,7 +124,7 @@ Beberapa subclass dari class Exception diantaranya adalah:
 • UnsupportedLookAndFeelException <br>
 • XMLParseException <br>
 
-<h3>3.Runtime Exception</h3>, direpresentasikan pada class RuntimeException yang menjelaskan mengenai kesalahan pada pemrograman seperti kesalahan casting, mengakses array out-of-bounds, dan juga error numerik. Runtime exceptions ini pada umumnya dilontarkan oleh JVM. Beberapa subclass dari class RuntimeException  diantaranya adalah:
+3.Runtime Exception, direpresentasikan pada class RuntimeException yang menjelaskan mengenai kesalahan pada pemrograman seperti kesalahan casting, mengakses array out-of-bounds, dan juga error numerik. Runtime exceptions ini pada umumnya dilontarkan oleh JVM. Beberapa subclass dari class RuntimeException  diantaranya adalah:
 • ClassCastException <br>
 • EmptyStackException <br>
 • EventException <br>
@@ -164,7 +164,7 @@ public class Generic1 {
 }
 ```
 
-<h3>The Try Block</h3> <br>
+<h3>The Try Block</h3>
     Langkah pertama dalam membangun Exception Handler adalah melemparkan exception dengan try block. Secara umum, blok Try terlihat seperti berikut ini:<br>
 
 ```java
@@ -183,7 +183,7 @@ public void writeList() {
     catch and finally blocks  . . .
 }
 ```
-<h3>The Catch Block</h3> <br>
+<h3>The Catch Block</h3>
 Jika anda sudah melihat contoh try maka secara tidak langsung anda sudah memahami kegunaan dari keyword ini. Dalam java, keyword catch harus dipasangkan dengan try. Kegunaan keyword ini adalah menangkap kesalahan atau bug yang terjadi dalam block try. Setelah menangkap kesalahan yang terjadi maka developer dapat melakukan hal apapun pada block catch sesuai keinginan developer.
 
 ````java
@@ -196,7 +196,7 @@ try {
 }
 ```
 
-<h3>The Finally Block<h3><br>
+<h3>The Finally Block<h3>
 Keyword ini merupakan keyword yang menunjukan bahwa blockprogram tersebut akan selalu dieksekusi meskipun adanya kesalahan yang muncul atau pun tidak ada.
 
 ``` java
