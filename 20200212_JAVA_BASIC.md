@@ -1,5 +1,5 @@
 <h2>Generic</h2><hr width="100%">
-    Cara Java dalam melakukan generalisasi terhadap tipe data tanpa mengurangi kemampuan Java dalam menjaga keamanan penggunaan tipe data.
+    Cara Java dalam melakukan generalisasi terhadap tipe data tanpa mengurangi kemampuan Java dalam menjaga keamanan penggunaan tipe data.<br>
     Definisi :<br>
      Tipe data berparameter yang bersifat generic atau di kenali pada saat runtime. <br>
      Menambah stabilisasi pada kode<br>
@@ -55,13 +55,13 @@ static void printCollection(
 <h3> Raw Types :</h3>
 Class bertipe generic masih bisa di-instantiasi (penciptaan objek) tanpa menggunakan argumen
 <h3> Generic Method    :</h3>
-Pada method generic, simbol hanya berlaku pada method itu saja dan tidak berlaku pada method lain dalam class
+Pada method generic, simbol hanya berlaku pada method itu saja dan tidak berlaku pada method lain dalam class <br>
 <h3>Erasure  :</h3>
-Compiler bertanggungjawab untuk “memahami” generics pada saat kompilasi.
- Namun compiler juga bertanggungjawab untuk menghapus “pemahaman” mengenai class generic, hal ini disebut type erasure.
- Informasi tipe data pada generic dihapus dari bytecode setelah kompilasi.
- Jadi generic-nya tidak wujud lagi pada saat runtime
- Setelah kompilasi, semua saling berbagi class yang sama
+Compiler bertanggungjawab untuk “memahami” generics pada saat kompilasi.<br>
+ Namun compiler juga bertanggungjawab untuk menghapus “pemahaman” mengenai class generic, hal ini disebut type erasure.<br>
+ Informasi tipe data pada generic dihapus dari bytecode setelah kompilasi.<br>
+ Jadi generic-nya tidak wujud lagi pada saat runtime <br>
+ Setelah kompilasi, semua saling berbagi class yang sama <br>
 
 
 <h2>Package<b></h2><hr width="100%">
@@ -79,8 +79,8 @@ kelas) package yang mengacu pada direktori tersebut.<br>
 
 Package examplepackage;
 
-2. Membuat struktur dan nama direktori yang sesuai dengan struktur dan nama package
-3. Mengkompilasi kelas-kelas sesuai dengan packagenya masing dengan packagenya masing-masing.
+2. Membuat struktur dan nama direktori yang sesuai dengan struktur dan nama package <br>
+3. Mengkompilasi kelas-kelas sesuai dengan packagenya masing dengan packagenya masing-masing. <br>
 
 Contoh package standard :
 
@@ -96,8 +96,8 @@ package namaPackage1[.namaPackage2[.namaPackage3]]; <br>
 <h3>Menggunakan Package</h3>
 - Kelas yang menggunakan berada dalam direktori(package) yang sama dengan kelas-kelas yang digunakan. Maka tidak diperlukan import.<br>
 - Kelas yang menggunakan berada dalam direktori(package) yang berbeda  dengan kelas-kelas yang digunakan. Maka pada awal source code di kelas pengguna harus mencantumkan : kelas pengguna harus mencantumkan :<br>
-import namaPackage.NamaKelas; atau
-import namaPackage. import namaPackage. ;
+import namaPackage.NamaKelas; atau<br>
+import namaPackage. import namaPackage. ;<br>
 
 <h2>Exception</h2><hr width="100%">
 Peristiwa yang terjadi ketika program menemui kesalahan pada saat instruksi program dijalankan.
@@ -109,28 +109,28 @@ Method yang menyebutkan bisa /mungkin dapat melemparkan exception <br>
 <h3>Klasifikasi class-class Exception:</h3>
 <b>1.System error</b>, Error class ini akan menjelaskan mengenai sistem error internal, meskipun hal ini jarang terjadi. Namun jika error ini terjadi maka tidak banyak yang bisa dilakukan selain memberitahu user dan menghentikan program dengan baik.
 
-Beberapa subclass dari class Error adalah:
-• AnnotationFormatError
-• AssertionError
-• AWTError
-• CoderMalfunctionError
-• FactoryConfigurationError
+Beberapa subclass dari class Error adalah:<br>
+• AnnotationFormatError <br>
+• AssertionError <br>
+• AWTError <br>
+• CoderMalfunctionError <br>
+• FactoryConfigurationError <br>
 2<b>.Exceptions</b>, direpresentasikan dalam class Exception yang menggambarkan kesalahan yang disebabkan karena program anda sendiri dan oleh sebab eksternal. Namun, error ini dapat ditangkap dan ditangani oleh program anda.
 Beberapa subclass dari class Exception diantaranya adalah:
 
-• IOException,
-• RuntimeException,
-• TimeoutException
-• UnsupportedLookAndFeelException
-• XMLParseException
+• IOException, <br>
+• RuntimeException, <br>
+• TimeoutException <br>
+• UnsupportedLookAndFeelException <br>
+• XMLParseException <br>
 
 <h3>3.Runtime Exception</h3>, direpresentasikan pada class RuntimeException yang menjelaskan mengenai kesalahan pada pemrograman seperti kesalahan casting, mengakses array out-of-bounds, dan juga error numerik. Runtime exceptions ini pada umumnya dilontarkan oleh JVM. Beberapa subclass dari class RuntimeException  diantaranya adalah:
-• ClassCastException
-• EmptyStackException
-• EventException
-• IllegalArgumentException,
-• IndexOutOfBoundsException
-• NullPointerException
+• ClassCastException <br>
+• EmptyStackException <br>
+• EventException <br>
+• IllegalArgumentException, <br>
+• IndexOutOfBoundsException <br>
+• NullPointerException <br>
 
 Contoh Exception Handling :
 ```java 
@@ -164,8 +164,8 @@ public class Generic1 {
 }
 ```
 
-<h3>The Try Block</h3> 
-    Langkah pertama dalam membangun Exception Handler adalah melemparkan exception dengan try block. Secara umum, blok Try terlihat seperti berikut ini:
+<h3>The Try Block</h3> <br>
+    Langkah pertama dalam membangun Exception Handler adalah melemparkan exception dengan try block. Secara umum, blok Try terlihat seperti berikut ini:<br>
 
 ```java
 private List<Integer> list;
@@ -183,7 +183,7 @@ public void writeList() {
     catch and finally blocks  . . .
 }
 ```
-<h3>The Catch Block</h3>
+<h3>The Catch Block</h3> <br>
 Jika anda sudah melihat contoh try maka secara tidak langsung anda sudah memahami kegunaan dari keyword ini. Dalam java, keyword catch harus dipasangkan dengan try. Kegunaan keyword ini adalah menangkap kesalahan atau bug yang terjadi dalam block try. Setelah menangkap kesalahan yang terjadi maka developer dapat melakukan hal apapun pada block catch sesuai keinginan developer.
 
 ````java
@@ -196,7 +196,7 @@ try {
 }
 ```
 
-<h3>The Finally Block<b3>
+<h3>The Finally Block<h3><br>
 Keyword ini merupakan keyword yang menunjukan bahwa blockprogram tersebut akan selalu dieksekusi meskipun adanya kesalahan yang muncul atau pun tidak ada.
 
 ``` java
