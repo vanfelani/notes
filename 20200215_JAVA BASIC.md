@@ -232,6 +232,22 @@ Detecting MIME type also depends on the framework or library used, each one may 
 
 # Maven
 ## Creating Maven Projects
+1. Use your IDE of choice to create maven project.
+2. In your new project, there should be a file named `pom.xml`
+3. The file contains project identifier and dependencies.  
+    **Project Identifier**  
+    *groupId* : Organization name  
+    *artifactId* : Project / module name  
+    *version* : Project version  
+
+    **Dependency**  
+    Dependency scope options are as below:  
+    - *compile* : Used (imported) in main source code, and will be included in final product. This is the default option.
+    - *runtime* : Not used (not imported) in source code, but will be included in final product. e.g., MySQL library.
+    - test : Used (imported) in test source code, but not in main source code. Not included in final product. e.g., JUnit library.
+    - provided : Used (imported) in main source code, but not included in final product. Usually because it is already provided by JDK or container at runtime. e.g., library javax.servlet.
+
+## Setting Up Maven Projects
 1. Open `pom.xml`.
 2. Add `maven-jar-plugin` plugin.
     ```xml
