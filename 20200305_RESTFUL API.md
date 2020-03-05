@@ -59,6 +59,7 @@ HTTP sendiri mempunyai standar error (status error codenya). dia punya status co
 Contohnya: 
 
 **HTTP STATUS CODE**
+
 | KATEGORI  | DESKRIPSI |
 | ----- | --- |
 | 1xx: Informasi   | Mengkomunikasikan informasi tingkat protokol transfer.  |
@@ -66,6 +67,7 @@ Contohnya:
 | 3xx: Pengalihan/Redirection | Menunjukkan bahwa klien harus mengambil beberapa tindakan tambahan untuk menyelesaikan permintaan mereka.  |
 | 4xx: Client Error | Kategori kode status kesalahan ini mengarahkan jari ke klien.  |
 | 5xx: Server Error | Server bertanggung jawab atas kode status kesalahan ini.  |
+
 
 Status code isinya 3 Angka.
 Contohnya:
