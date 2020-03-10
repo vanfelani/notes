@@ -1,10 +1,10 @@
-####@Repository
+###@Repository
 + Anntotation @Repository mengindikasikan bahwa class yang di beri annotation tersebut adalah Repository.
 
 + Perbedaan memakai spring boot dan hibernate:
->1. Hibernate
+	1. Hibernate
 
-**1. **Ketika melakukan query pada repository membutuhkan entity manager.
+**1.** Ketika melakukan query pada repository membutuhkan entity manager.
 Contoh code:
 ~~~java
 private final Class<E> entityClass;
@@ -16,7 +16,7 @@ public AbstractRepository(Class<E> entityClass, EntityManager entityManager) {
 }
 ~~~
 
-**2. ** Ketika melakukan transaksi membutuhkan transaction.begin() dan transaction.commit().
+**2.** Ketika melakukan transaksi membutuhkan transaction.begin() dan transaction.commit().
 Contoh code:
 ~~~java
 public Stock save(Stock entity) throws SQLException {
@@ -32,16 +32,16 @@ public Stock save(Stock entity) throws SQLException {
 
 Dua kalimat di atas merupakan implementasi pada hibernate.
 
->2. Spring Boot
+	2. Spring Boot
 
-**1. ** Menyediakan annotation @Autowired yang sudah membungkus entity manager.
+**1.** Menyediakan annotation @Autowired yang sudah membungkus entity manager.
 Contoh penggunaan annotation @autowired: 
 ~~~java
 @Autowired
 private EntityManager entityManager;
 ~~~
 
-**2. ** Menyediakan annotation @Transactional yang membungkus transaction.begin() dan transaction.commit(). Annotation ini dapat diletakkan pada class ataupun method, Sehingga ketika class atau method yang mempunyai annotation @Transactional terdapat error maka class atau method tersebut akan melakukan rollback.
+**2.** Menyediakan annotation @Transactional yang membungkus transaction.begin() dan transaction.commit(). Annotation ini dapat diletakkan pada class ataupun method, Sehingga ketika class atau method yang mempunyai annotation @Transactional terdapat error maka class atau method tersebut akan melakukan rollback.
 Contoh penggunaan annotation @Transactional pada class:
 ~~~java
 @Transactional
@@ -64,22 +64,22 @@ public Item findById(Integer id) {
 
 + Tipe transaction *mandatory* harus dipanggil di transaction context karena tidak ada transaction.begin() dan transaction.commit().
 
-####Custom Repository
-**1. ** Membuat interface ItemRepositoryCustom
+###Custom Repository
+**1.** Membuat interface ItemRepositoryCustom
 ~~~java
 public interface ItemRepositoryCustom {
     public List<Item> findByNameLike(String name);
 }
 ~~~
 
-**2. ** Karena interface ItemRepository sudah melakukan extend pada JpaRepository, maka interface ItemRepositoryCustom dapat diletakkan pada extends ItemRepository sehingga interface ItemRepositoryCustom sudah memiliki semua method dari JpaRepository dan menjadi repository.
+**2.** Karena interface ItemRepository sudah melakukan extend pada JpaRepository, maka interface ItemRepositoryCustom dapat diletakkan pada extends ItemRepository sehingga interface ItemRepositoryCustom sudah memiliki semua method dari JpaRepository dan menjadi repository.
 ~~~java
 public interface ItemRepository extends JpaRepository<Item, Integer>, ItemRepositoryCustom{
     public List<Item> findByNameContaining(String name);
 }
 ~~~
 
-**3. ** Buat class ItemRepositoryCustomImpl yang mengimplement ItemRepositoryCustom agar class ItemRepositoryCustomImpl menjadi repository dan mempunyai method dari JpaRepository.
+**3.** Buat class ItemRepositoryCustomImpl yang mengimplement ItemRepositoryCustom agar class ItemRepositoryCustomImpl menjadi repository dan mempunyai method dari JpaRepository.
 ~~~java
 public class ItemRepositoryCustomImpl implements ItemRepositoryCustom {
 
@@ -97,14 +97,14 @@ public class ItemRepositoryCustomImpl implements ItemRepositoryCustom {
 }
 ~~~
 
-**4. ** Buat class interface ItemService yang mempunyai method findByNameLike().
+**4.** Buat class interface ItemService yang mempunyai method findByNameLike().
 ~~~java
 public interface ItemService {
 	public List<Item> findByNameLike(String name, boolean ignoreCase);
 }
 ~~~
 
-**5. ** Panggil method findByNameLike() pad class Item Controller.
+**5.** Panggil method findByNameLike() pad class Item Controller.
 ~~~java
 @GetMapping
 public ResponseMessage<List<ItemModel>> findAll(@RequestParam(required = false) String name, boolean ignoreCase) {
@@ -118,11 +118,11 @@ public ResponseMessage<List<ItemModel>> findAll(@RequestParam(required = false) 
 }
 ~~~
 
-####Query By Example
+###Query By Example
 + Query by Example (QBE) adalah metode pembuatan query yang memungkinkan kita untuk mengeksekusi query berdasarkan example entity instance. QBE ini berguna untuk melakukan pencarian.
 
 Contoh Penggunaan QBE:
-**1. ** Buat method yang mengimplemtasikan QBE sebagai contoh adalah method findAll
+**1.** Buat method yang mengimplemtasikan QBE sebagai contoh adalah method findAll
 ~~~java
 @Override
 public List<Item> findAll(Item entity) {
@@ -133,12 +133,12 @@ public List<Item> findAll(Item entity) {
 }
 ~~~
 
-**2. ** Buat method findAll pada interface
+**2.** Buat method findAll pada interface
 ~~~java
 public List<Item> findAll(Item entity);
 ~~~
 
-**3. ** Gunakan method findAll pada class ItemController
+**3.** Gunakan method findAll pada class ItemController
 ~~~java
 @GetMapping
 public ResponseMessage<List<ItemModel>> findAll(@RequestParam(required = false) String name) {
@@ -153,7 +153,7 @@ public ResponseMessage<List<ItemModel>> findAll(@RequestParam(required = false) 
 }
 ~~~
 
-####Pagination
+###Pagination
 + Pagination sangat berguna ketika memiliki data yang besar dan ingin menyajikan kepada pengguna dalam potongan yang lebih kecil, dan juga ketika perlu mengurutkan data berdasarkan beberapa kriteria saat paging.
 
 + Interface Page memiliki:
@@ -163,14 +163,14 @@ public ResponseMessage<List<ItemModel>> findAll(@RequestParam(required = false) 
 	- Method getSize untuk mengetahui size berdasarkan url.
 
 + Implementasi pagination
-**1. ** Buat method pada class interface ItemService.
+**1.** Buat method pada class interface ItemService.
 ~~~java
 public interface ItemService {
    public Page<Item> findAll(Item entity, int page, int size, Sort.Direction direction);
 }
 ~~~
 
-**2. ** Implementasikan method pada ItemService di class ItemServiceImpl.
+**2.** Implementasikan method pada ItemService di class ItemServiceImpl.
 ~~~java
 @Override
 public Page<Item> findAll(Item entity, int page, int size, Sort.Direction direction) {
@@ -182,7 +182,7 @@ public Page<Item> findAll(Item entity, int page, int size, Sort.Direction direct
 }
 ~~~
 
-**3. ** Buat class PageableList.
+**3.** Buat class PageableList.
 ~~~java
 public class PageableList<T> {
 
@@ -232,7 +232,7 @@ public class PageableList<T> {
 }
 ~~~
 
-**4. ** Gunakan method pada ItemController.
+**4.** Gunakan method pada ItemController.
 ~~~java
 @GetMapping
 public ResponseMessage<PageableList<ItemModel>> findAll(
