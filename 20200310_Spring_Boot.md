@@ -1,8 +1,9 @@
-###@Repository
+### @Repository
 
-+ Anntotation @Repository mengindikasikan bahwa class yang di beri annotation tersebut adalah Repository.
++ Annotation @Repository mengindikasikan bahwa class yang di beri annotation tersebut adalah Repository.
 
 + Perbedaan memakai spring boot dan hibernate:
+
 i. Hibernate
 
 **1.** Ketika melakukan query pada repository membutuhkan entity manager.
@@ -65,7 +66,8 @@ public Item findById(Integer id) {
 
 + Tipe transaction *mandatory* harus dipanggil di transaction context karena tidak ada transaction.begin() dan transaction.commit().
 
-###Custom Repository
+### Custom Repository
+
 **1.** Membuat interface ItemRepositoryCustom
 ~~~java
 public interface ItemRepositoryCustom {
@@ -119,7 +121,7 @@ public ResponseMessage<List<ItemModel>> findAll(@RequestParam(required = false) 
 }
 ~~~
 
-###Query By Example
+### Query By Example
 + Query by Example (QBE) adalah metode pembuatan query yang memungkinkan kita untuk mengeksekusi query berdasarkan example entity instance. QBE ini berguna untuk melakukan pencarian.
 
 Contoh Penggunaan QBE:
@@ -154,7 +156,7 @@ public ResponseMessage<List<ItemModel>> findAll(@RequestParam(required = false) 
 }
 ~~~
 
-###Pagination
+### Pagination
 + Pagination sangat berguna ketika memiliki data yang besar dan ingin menyajikan kepada pengguna dalam potongan yang lebih kecil, dan juga ketika perlu mengurutkan data berdasarkan beberapa kriteria saat paging.
 
 + Interface Page memiliki:
@@ -164,6 +166,7 @@ public ResponseMessage<List<ItemModel>> findAll(@RequestParam(required = false) 
 	- Method getSize untuk mengetahui size berdasarkan url.
 
 + Implementasi pagination
+
 **1.** Buat method pada class interface ItemService.
 ~~~java
 public interface ItemService {
