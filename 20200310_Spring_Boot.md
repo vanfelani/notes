@@ -1,8 +1,9 @@
 ###@Repository
+
 + Anntotation @Repository mengindikasikan bahwa class yang di beri annotation tersebut adalah Repository.
 
 + Perbedaan memakai spring boot dan hibernate:
-	1. Hibernate
+i. Hibernate
 
 **1.** Ketika melakukan query pada repository membutuhkan entity manager.
 Contoh code:
@@ -32,7 +33,7 @@ public Stock save(Stock entity) throws SQLException {
 
 Dua kalimat di atas merupakan implementasi pada hibernate.
 
-	2. Spring Boot
+ii. Spring Boot
 
 **1.** Menyediakan annotation @Autowired yang sudah membungkus entity manager.
 Contoh penggunaan annotation @autowired: 
