@@ -26,11 +26,11 @@ hasil:
 
 
 ### Empty Element
-Beberapa elemen tidak memiliki konten dan disebut elemen kosong. Sebagai contoh lihat elemen <img> di bawah ini:
+Beberapa elemen tidak memiliki konten dan disebut elemen kosong. Sebagai contoh lihat elemen `<img>` di bawah ini:
 ````
 <img src="images/firefox-icon.png" alt="My test image">
 ````
-Ini berisi dua atribut, tetapi tidak ada tag </img> penutup dan tidak ada konten di dalamnya. Ini karena elemen gambar tidak membungkus konten untuk mempengaruhinya. Tujuannya adalah untuk menanamkan gambar di halaman HTML.
+Ini berisi dua atribut, tetapi tidak ada tag `</img>`penutup dan tidak ada konten di dalamnya. Ini karena elemen gambar tidak membungkus konten untuk mempengaruhinya. Tujuannya adalah untuk menanamkan gambar di halaman HTML.
 
 berikut adalah contoh-contoh empty elemen HTML:
 1. `<area>` = fungsinya untuk mendefinisikan area pada image map. Image map merupakan sebuah gambar yang memiliki area yang bisa diklik Tag `<area>` selalu berada di dalam tag `<map>`.
