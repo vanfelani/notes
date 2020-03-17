@@ -54,9 +54,9 @@ berikut adalah contoh-contoh empty elemen HTML:
 ````
 
 penjelasan:
-- `<! DOCTYPE html>` - doctype. Diperlukan mukadimah. Dalam kabut waktu, ketika HTML masih muda (sekitar 1991/92), DOCTYPE dimaksudkan untuk bertindak sebagai tautan ke serangkaian aturan yang harus diikuti oleh halaman HTML untuk dianggap sebagai HTML yang baik, yang bisa berarti pengecekan kesalahan otomatis dan lainnya. hal yang bermanfaat. Namun hari ini, mereka tidak berbuat banyak, dan pada dasarnya hanya diperlukan untuk memastikan dokumen Anda berperilaku dengan benar. Hanya itu yang perlu Anda ketahui untuk saat ini.
+- `<! DOCTYPE html>` - doctype. Diperlukan ketika HTML masih muda (sekitar 1991/92), DOCTYPE dimaksudkan untuk bertindak sebagai tautan ke serangkaian aturan yang harus diikuti oleh halaman HTML untuk dianggap sebagai HTML yang baik, yang bisa berarti pengecekan kesalahan otomatis dan lainnya. hal yang bermanfaat. Namun saat ini, DOCTYPE tidak terlalu diperlukan, dan pada dasarnya hanya diperlukan untuk memastikan dokumen Anda berperilaku dengan benar.
 - `<html> </html>` - elemen `<html>`. Elemen ini membungkus semua konten di seluruh halaman dan kadang-kadang dikenal sebagai elemen root(akar).
-- `<head> </head>` - elemen `<head>`. Elemen ini bertindak sebagai wadah untuk semua hal yang ingin Anda sertakan pada halaman HTML yang bukan konten yang Anda tampilkan kepada pengunjung halaman Anda. Ini termasuk hal-hal seperti kata kunci dan deskripsi halaman yang ingin Anda tampilkan di hasil pencarian, CSS untuk menata konten kami, deklarasi set karakter dan banyak lagi.
+- `<head> </head>` - elemen `<head>`. Elemen ini bertindak sebagai wadah untuk semua hal yang ingin Anda sertakan pada halaman HTML yang bukan konten yang Anda tampilkan kepada pengunjung halaman Anda. Ini termasuk hal-hal seperti kata kunci dan deskripsi halaman yang ingin Anda tampilkan di hasil pencarian, CSS untuk menata konten, deklarasi set karakter dan banyak lagi.
 didalam blok head terdapat `<title>` dan `<h1>` berikut bedanya:
     - Elemen `<h1>` muncul di halaman saat dimuat di browser - umumnya `<h1>` harus digunakan sekali per halaman, untuk menandai judul konten halaman (judul cerita, atau berita utama, atau apa pun yang sesuai dengan penggunaan. )
     - Elemen `<title>` adalah metadata yang mewakili judul keseluruhan dokumen HTML (bukan konten dokumen.)
