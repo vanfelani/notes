@@ -171,7 +171,7 @@ blockquote {
     background: pink;
 }
 ~~~
-Jangan tulis seperti ini:
+
 
 #### Cara Menulis kode CSS dalam HTML
 
