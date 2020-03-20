@@ -1,0 +1,236 @@
+[33mcommit a6697e785514775953db02d9fdcae3cdfcb4f9d0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Yussin R. Hidayat <van.de.bugs@gmail.com>
+Date:   Tue Feb 18 16:43:57 2020 +0700
+
+    [TEMP] Change second paragraph.
+
+[33mcommit e51c30052cec4c46e0b2156ecf348532fd9ed240[m
+Author: Adam Nasrudin <adamnasrudin858@gmail.com>
+Date:   Tue Feb 18 17:14:32 2020 +0700
+
+    [TEMP] change 2th paragraph go to paragraph akhir
+
+[33mcommit eaf8fecd1b2042bf14f2adb746fed12b5fffd084[m
+Merge: f07b2ac 336d443
+Author: Adam Nasrudin <adamnasrudin858@gmail.com>
+Date:   Tue Feb 18 17:09:00 2020 +0700
+
+    Merge branch 'master' of git.enigmacamp.com:enigma-pamulang/batch4/notes
+
+[33mcommit 336d44351f15b53659e4b034e8a1598e5f361701[m
+Author: Fajri Khairullah <fajrikhairullahh@gmail.com>
+Date:   Tue Feb 18 10:06:35 2020 +0000
+
+    Update tmp/notes.txt
+
+[33mcommit f07b2acb877652b45d75b0982855eb45236c6e19[m
+Merge: f524f44 e446008
+Author: Adam Nasrudin <adamnasrudin858@gmail.com>
+Date:   Tue Feb 18 16:47:45 2020 +0700
+
+    Merge branch 'master' of git.enigmacamp.com:enigma-pamulang/batch4/notes
+
+[33mcommit f524f44411aef98b4c0d684c236d384575c9c1cd[m
+Author: Adam Nasrudin <adamnasrudin858@gmail.com>
+Date:   Tue Feb 18 16:47:05 2020 +0700
+
+    [TEMP] change 2th paragraph to 3th paragraph
+
+[33mcommit e446008ecd0229187851ca1a77cc0f78999159b7[m
+Author: imantaraabiyyu <abiyyu1531099@sttpln.ac.id>
+Date:   Tue Feb 18 16:37:16 2020 +0700
+
+    test
+
+[33mcommit 472cf5ed7c61993609a0bad8001fe93c093474fc[m
+Author: Yussin R. Hidayat <van.de.bugs@gmail.com>
+Date:   Tue Feb 18 16:33:03 2020 +0700
+
+    [TEMP] Create sample files.
+
+[33mcommit 1b5010f0900e35575cc2783d6176b0a9beff1f3b[m
+Author: Sahril Rahmatulloh <=>
+Date:   Mon Feb 17 20:50:38 2020 +0700
+
+    Menambahkan materi Unit Test
+
+[33mcommit 3caf8ad2da1d3ff61e7a3f9956e05939f67a1d58[m
+Author: Charles Martino <charlesmartino36@gmail.com>
+Date:   Sun Feb 16 21:10:34 2020 +0700
+
+    add some note about pom.xml content
+
+[33mcommit 465208b52cac917085c53bfa41c664e0d32d22f3[m
+Author: Charles Martino <charlesmartino36@gmail.com>
+Date:   Sun Feb 16 18:51:57 2020 +0700
+
+    add 15 Feb note
+
+[33mcommit 6818478c0c492470276f6f6f43d3064719f62ec9[m
+Author: Firdaus <firdausmhdakbar@gmail.com>
+Date:   Fri Feb 14 17:33:32 2020 +0000
+
+    Materi Java Basic I/O
+
+[33mcommit d48d7009236fa3945784bcedbe1ae8500ce9d3a0[m
+Author: Abimanyu Rizqi Maulana <abimanyurizqi1997@gmail.com>
+Date:   Thu Feb 13 23:44:13 2020 +0700
+
+    Menambahkan materi java basic day 8
+
+[33mcommit 65edea65daca57c57d1870d3beac47e4cdb36101[m
+Author: Christin Meiliana <meiliana2505@gmail.com>
+Date:   Thu Feb 13 00:05:35 2020 +0000
+
+    20200212_JAVA_BASIC.md
+
+[33mcommit 1d641d03f57a0bf1f5e0e0159e0bac5e3f4bf57a[m
+Author: Christin Meiliana <meiliana2505@gmail.com>
+Date:   Thu Feb 13 00:00:46 2020 +0000
+
+    20200212_JAVA_BASIC.md
+
+[33mcommit 7f956f92bd6eedec81caeda5d97da41d9576831a[m
+Author: Christin Meiliana <meiliana2505@gmail.com>
+Date:   Wed Feb 12 23:56:36 2020 +0000
+
+    20200212_JAVA_BASIC.md
+
+[33mcommit 95e4722ab65dd85e7207240c0dd3c4f3223048b7[m
+Author: Christin Meiliana <meiliana2505@gmail.com>
+Date:   Wed Feb 12 23:48:20 2020 +0000
+
+    Update 20200212_JAVA_BASIC.md
+
+[33mcommit 97fc48a5419667a07b307d1f460bcd8d37d6873a[m
+Author: Christin Meiliana <meiliana2505@gmail.com>
+Date:   Wed Feb 12 23:42:32 2020 +0000
+
+    Java Basic Generic , Package dan Exception
+
+[33mcommit dc12ec8260ec239fef2f5a50cfbbc1a83ee48691[m
+Author: Ade Hidayat <adeh3101@gmail.com>
+Date:   Tue Feb 11 23:54:26 2020 +0000
+
+    Upload Note Today 6
+
+[33mcommit 2d886663cd4db94b72ab2630ea274b2bf875b392[m
+Author: Ahmad Isa Hambali <izam.hambali@gmail.com>
+Date:   Tue Feb 11 08:48:45 2020 +0700
+
+    Memperbarui catatan hari ke-5
+
+[33mcommit 9b0a3f666255da38019b526b76bdea55fd2a6734[m
+Author: Ahmad Isa Hambali <izam.hambali@gmail.com>
+Date:   Mon Feb 10 22:34:48 2020 +0700
+
+    Materi java basic hari ke lima
+
+[33mcommit f8cd37cab3cb7222beb26859e3106cc7979d6d81[m
+Author: Adam Nasrudin <adamnasrudin858@gmail.com>
+Date:   Sun Feb 9 22:47:42 2020 +0700
+
+     Materi java basic mengenai class
+
+[33mcommit 1355550cb1eee4a41cb6adf71d212d736236c476[m
+Author: rhayeksa <rhayeksads@gmail.com>
+Date:   Fri Feb 7 21:10:15 2020 +0700
+
+    materi java basic hari ketiga
+
+[33mcommit 5d6197b1f94014c9a8ba1dfa05e92a269580f5d2[m
+Merge: 3e6bb4b 233d447
+Author: rhayeksa <rhayeksads@gmail.com>
+Date:   Fri Feb 7 21:08:31 2020 +0700
+
+    Merge branch 'master' of git.enigmacamp.com:enigma-pamulang/batch4/notes
+
+[33mcommit 3e6bb4be824c626b78fd4e4865cbb9ec7a8a7948[m
+Author: rhayeksa <rhayeksads@gmail.com>
+Date:   Fri Feb 7 21:06:31 2020 +0700
+
+    Materi Java Bacic hari ketiga
+
+[33mcommit 233d44716c81d2d4059db63d51e9c3393053e4e5[m
+Author: ade gunawan <adegunawan202@gmail.com>
+Date:   Thu Feb 6 23:17:31 2020 +0700
+
+    materi basic java hari kedua
+
+[33mcommit 11b5619e790bb475b6939e82ea0dd4563ed4a031[m
+Author: ade gunawan <adegunawan202@gmail.com>
+Date:   Thu Feb 6 23:07:43 2020 +0700
+
+    menambahkan materi java basic
+
+[33mcommit 843dc4205fe4e33a5c4a4b57a5b7d813a46661b2[m
+Author: Aditya Saputra <adityasaputra111298@gmail.com>
+Date:   Thu Feb 6 12:43:20 2020 +0000
+
+    materi git basic hari pertama.md
+
+[33mcommit 35b3a4126d442316f3d8813fce4510f68539cdd5[m
+Author: Aditya Saputra <adityasaputra111298@gmail.com>
+Date:   Thu Feb 6 12:42:19 2020 +0000
+
+    materi java basic hari pertama.md
+
+[33mcommit 4d44bb66b9190bde0781909dd223a1cf82912bdc[m
+Author: Aditya Saputra <adityasaputra111298@gmail.com>
+Date:   Thu Feb 6 12:25:58 2020 +0000
+
+    Update 20200205 GITBASIC DAN JAVA BASIC.md
+
+[33mcommit 708eda3f954782c6e975bbd4b8ed17dcee5fb010[m
+Author: Aditya Saputra <adityasaputra111298@gmail.com>
+Date:   Wed Feb 5 22:18:51 2020 +0000
+
+    Update 20200205 GITBASIC DAN JAVA BASIC.md
+
+[33mcommit f5265fee35ec3c79f703c96b61e5dee782ff188a[m
+Author: Aditya Saputra <adityasaputra111298@gmail.com>
+Date:   Wed Feb 5 14:56:41 2020 +0000
+
+    Update 20200502 GITBASIC DAN JAVA BASIC.md
+
+[33mcommit 13e2975bc46d9f5a26d5c991f5d3313b27d3fa50[m
+Author: Aditya Saputra <adityasaputra111298@gmail.com>
+Date:   Wed Feb 5 13:11:08 2020 +0000
+
+    Update 20200502 GITBASIC DAN JAVA BASIC.md
+
+[33mcommit a0d56882faa3318a5079ffb6680e14e8dd6763bc[m
+Author: aditya.saputra <adityasaputra111298@gmail.com>
+Date:   Wed Feb 5 20:08:32 2020 +0700
+
+    Materi hari pertama EnigmaBootcamp
+
+[33mcommit 5b4eb042973d3326d79f3f90acfb106f765ef8b5[m
+Author: Aditya Saputra <adityasaputra111298@gmail.com>
+Date:   Wed Feb 5 12:48:21 2020 +0000
+
+    Add README.md
+
+[33mcommit e0875786d84baa77fe049520189be54f3acfadb5[m
+Author: Yussin R. Hidayat <van.de.bugs@gmail.com>
+Date:   Wed Feb 5 12:49:35 2020 +0700
+
+    Remove README
+
+[33mcommit 9da68ff7974d0f3fc7e0d46da13ccaf4d753a171[m
+Author: Adam Nasrudin <adamnasrudin858@gmail.com>
+Date:   Wed Feb 5 12:52:09 2020 +0700
+
+    Remove baca
+
+[33mcommit a36b8754426cde65ead784709af1650a93ca0252[m
+Author: Adam Nasrudin <adamnasrudin858@gmail.com>
+Date:   Wed Feb 5 11:43:23 2020 +0700
+
+    Add baca
+
+[33mcommit d6597bb748938651d63d185d9c796ae37486e267[m
+Author: Yussin R. Hidayat <van.de.bugs@gmail.com>
+Date:   Wed Feb 5 11:29:22 2020 +0700
+
+    Add README
