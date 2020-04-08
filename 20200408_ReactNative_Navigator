@@ -1,0 +1,151 @@
+# React Native
++ sudah menyediakan komponen-komponen inti
++ tidak ada tag html
+
+### Install React Navigation
++ npm install @react-navigation/native
++ npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
++ Dari React Native 0.60 dan lebih tinggi, otomatis terhubung sehingga tidak perlu run react-native link
++ Taruh potongan code pada index.js atau App.js :
+~~~java
+import 'react-native-gesture-handler';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+
+export default function App() {
+  return (
+    <NavigationContainer>{/* Rest of your app code */}</NavigationContainer>
+  );
+}
+~~~
+
+### Stack Navigator
++ **Stack Navigator ** adalah cara untuk berpindah antar layar dengan menggunakan metode tumpukan(stack)
++ Automatis mempunyai back
+
+#### Install Stack Navigator
++ npm install @react-navigation/stack
+~~~java
+import { createStackNavigator } from '@react-navigation/stack';
+const Stack = createStackNavigator();
+
+ <Stack.Navigator>
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Notifications" component={Notifications} />
+      <Stack.Screen name="Profile" component={Profile} />
+      <Stack.Screen name="Settings" component={Settings} />
+    </Stack.Navigator>
+~~~
+
++ name pada stack.screen adalah router menuju halaman komponen Home
++ Berpindah tempat menggunakan button yang dibungkus view (seperti pada react web dimana button dibungkus dengan elemen div)
+
+#### Props
++ headerMode : none ==> Header tidak akan di render(di tampilkan)
++ screenOptions ==> opsi default untuk digunakan pada layar navigasi
++ initialRouteName ==> nama route yang di render pertama kali
+
++ Contoh penggunan stack navigator: 
+~~~java
+import 'react-native-gesture-handler';
+import * as React from 'react';
+import {Text, Button, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
+
+function AScreen({navigation}) {
+  return (
+    <View>
+      <Text>A Screen</Text>
+      <Button title="Go to B" onPress={() => navigation.navigate('B')} />
+    </View>
+  );
+}
+
+function BScreen({navigation}) {
+  return (
+    <View>
+      <Text>B Screen</Text>
+      <Button title="Go to C" onPress={() => navigation.navigate('C')} />
+    </View>
+  );
+}
+
+function CScreen() {
+  return (
+    <View>
+      <Text>C Screen</Text>
+    </View>
+  );
+}
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="A" component={AScreen} options={{title: 'Title'}} />
+        <Stack.Screen name="B" component={BScreen} />
+        <Stack.Screen name="C" component={CScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+~~~
+
+### Drawer Navigator
++ **Drawer Navigator** adalah komponen yang di render pada navigasi drawer dapat di buka dan di tutup dengan gestur
+
+#### Install Drawer Navigator
++ npm install @react-navigation/drawer
+
+#### Props
++ headerMode : none ==> Header tidak akan di render(di tampilkan)
++ screenOptions ==> opsi default untuk digunakan pada layar navigasi
++ backBehavior ==> menghandel tombol back
+
++ Contoh penggunaan drawer navigator:
+~~~java
+import { createDrawerNavigator } from '@react-navigation/drawer';
+
+const Drawer = createDrawerNavigator();
+
+function MyDrawer() {
+  return (
+    <Drawer.Navigator>
+      <Drawer.Screen name="Feed" component={Feed} />
+      <Drawer.Screen name="Article" component={Article} />
+    </Drawer.Navigator>
+  );
+}
+~~~
+
+# NativeBase
++ **Native Base** adalah *open source User Interface component library* pada React Native untuk membuat aplikasi mobile pada iOS dan Android
+
+#### Install Native Base
++ npm install native-base --save
+
++ Contoh penggunaan Native base dengan Container dan Header:
+~~~java
+import React, {Component} from 'react';
+import {Container, Content, Text} from 'native-base';
+import CommonHeader from '../../components';
+
+class HomeScreen extends Component {
+  render() {
+    const {navigation} = this.props;
+    return (
+      <Container>
+        <CommonHeader navigation={navigation} title={'Home'} />
+        <Content>
+          <Text>This is Home Screen </Text>
+        </Content>
+      </Container>
+    );
+  }
+}
+
+export default HomeScreen;
+~~~
